@@ -1,1 +1,79 @@
-# sql_test
+# SQl Test Suites
+
+
+## Table Structure
+
+#### `employee` Table
+
+| employee_id | employee_name | mobile | password | user_role_id | Dept_id | is_active | is_verified | Is_deleted | created_at | updated_at
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1	| albert    | +65 12312334 | ********* | 1 | 4 | True| True| False| 2021-03-24 02:06:52.404160| 2021-03-24 02:06:52.404160
+| 2	| nizam		| +65 11312355 | ********* | 2 | 2 | True | True | 	False | 2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
+| 3	| john		| +65 66312339 | ********* | 3 | 3 | True | True | 	False | 2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
+| 4	| robbin	| +65 76312456 | ********* | 4 | 3 | True | false |	False | 2021-04-24 02:06:52.404160 | 2021-04-26 02:06:52.404160
+| 5	| patric	| +65 45312543 | ********* | 5 | 4 | True | True | 	False | 2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
+| 6	| Jon		| +65 96312435 | ********* | 6 | 2 | False | False |	False | 2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
+| 7	| stephens	| +65 87412743 | ********* | 7 | 1 | True | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-48 02:06:52.404160
+| 8	| mike		| +65 12326775 | ********* | 8 | 1 | True | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-27 02:06:52.404160
+| 9	| hillyer	| +65 18367456 | ********* | 9 | 3 | False | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-29 02:06:52.404160
+|10	| robbin	| +65 99312343 | ********* | 10 | 4| True | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-24 02:06:52.404160
+___
+#### `employee_role` Table
+
+| employee_role_id | employee_id | role_id |
+| :---: | :---: | :---: |
+|1	| 1	| 1
+|2	| 2	| 3
+|3	| 3	| 2
+|4	| 4	| 3
+|5	| 5	| 4
+|6	| 6	| 2
+|7	| 7	| 5
+|6	| 6	| 2
+|8	| 8	| 5
+|9	| 9	| 5
+|10	| 10| 1
+|11	| 2	| 4
+|12	| 5	| 3
+___
+#### `role` Table
+
+| role_id | role |
+| :---: | :---: | 
+|1	| SuperAdmin
+|2	| admin
+|3	| collector
+|4	| trainer
+|5	| officer
+___
+#### `department` Table
+
+| dept_id | department |
+| :---: | :---: | 
+|1  | ADMIN
+|2	| HR
+|3	| ACCOUNT
+|4	| ENGINEERING
+___
+
+## Question List
+
+### Write sql queries for below scenarios
+
+ - Fetch user name, department name and mobile number.
+
+ - Fetch the no. of employees for each department in the descending order.
+
+ - Fetch user name, role and department of the employee who are under role trainer and officer.
+
+ - Fetch duplicate records in employee_role table.
+
+ - Update is_deleted:True and is_updateted:current_time for inactive and not verified user in HR department.
+
+ - Update is_activ:false for all users working under engineering department.
+
+ - Delete all inactive users.
+
+ - Write an SQL query to clone a new table from another table.
+
+ 
