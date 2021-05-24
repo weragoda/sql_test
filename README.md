@@ -5,18 +5,18 @@
 
 #### `employee` Table
 
-| employee_id | employee_name | mobile | password | user_role_id | Dept_id | is_active | is_verified | Is_deleted | created_at | updated_at
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1	| albert    | +65 12312334 | ********* | 1 | 4 | True| True| False| 2021-03-24 02:06:52.404160| 2021-03-24 02:06:52.404160
-| 2	| nizam		| +65 11312355 | ********* | 2 | 2 | True | True | 	False | 2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
-| 3	| john		| +65 66312339 | ********* | 3 | 3 | True | True | 	False | 2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
-| 4	| robbin	| +65 76312456 | ********* | 4 | 3 | True | false |	False | 2021-04-24 02:06:52.404160 | 2021-04-26 02:06:52.404160
-| 5	| patric	| +65 45312543 | ********* | 5 | 4 | True | True | 	False | 2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
-| 6	| Jon		| +65 96312435 | ********* | 6 | 2 | False | False |	False | 2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
-| 7	| stephens	| +65 87412743 | ********* | 7 | 1 | True | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-48 02:06:52.404160
-| 8	| mike		| +65 12326775 | ********* | 8 | 1 | True | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-27 02:06:52.404160
-| 9	| hillyer	| +65 18367456 | ********* | 9 | 3 | False | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-29 02:06:52.404160
-|10	| robbin	| +65 99312343 | ********* | 10 | 4| True | True | 	False | 2021-05-24 02:06:52.404160 | 2021-05-24 02:06:52.404160
+| employee_id | user_name | employee_name | mobile | password | user_role_id | Dept_id | is_active | is_verified | Is_deleted | salary | created_at | updated_at
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1	| albert | albert einstein    | +65 12312334 | ********* | 1 | 4 | True| True| False| 4920 |2021-03-24 02:06:52.404160| 2021-03-24 02:06:52.404160
+| 2	| nizam  | nizam ismail 	| +65 11312355 | ********* | 2 | 2 | True | True | 	False | 6873 |2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
+| 3	| john	 | john monash   | +65 66312339 | ********* | 3 | 3 | True | True | 	False | 5487 |2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
+| 4	| robbin | robbin tan	| +65 76312456 | ********* | 4 | 3 | True | false |	False | 5596 |2021-04-24 02:06:52.404160 | 2021-04-26 02:06:52.404160
+| 5	| patric | patric lee	| +65 45312543 | ********* | 5 | 4 | True | True | 	False | 4569 |2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
+| 6	| Jon    | Jon snow		| +65 96312435 | ********* | 6 | 2 | False | False |	False | 4676 |2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
+| 7	| stephens | stephen hawking	| +65 87412743 | ********* | 7 | 1 | True | True | 	False | 5735 |2021-05-24 02:06:52.404160 | 2021-05-48 02:06:52.404160
+| 8	| mike   | mike pence		| +65 12326775 | ********* | 8 | 1 | True | True | 	False | 3934 |2021-05-24 02:06:52.404160 | 2021-05-27 02:06:52.404160
+| 9	| hillyer| hillyer forman	| +65 18367456 | ********* | 9 | 3 | False | True | 	False | 7743 |2021-05-24 02:06:52.404160 | 2021-05-29 02:06:52.404160
+|10	| robbin | robbin hood	| +65 99312343 | ********* | 10 | 4| True | True | 	False | null |2021-05-24 02:06:52.404160 | 2021-05-24 02:06:52.404160
 ___
 #### `employee_role` Table
 
@@ -60,20 +60,18 @@ ___
 
 ### Write sql queries for below scenarios
 
- - Fetch user name, department name and mobile number.
-
- - Fetch the no. of employees for each department in the descending order.
+ - Fetch the department, no. of employees for each department in the descending order.
 
  - Fetch user name, role and department of the employee who are under role trainer and officer.
 
- - Fetch duplicate records in employee_role table.
+ - Fetch duplicate records if any and delete dullicate records in employee role table.
 
  - Update is_deleted:True and is_updateted:current_time for inactive and not verified user in HR department.
 
- - Update is_activ:false for all users working under engineering department.
+ - Update is_active:false for all employees working under engineering department.
 
- - Delete all inactive users.
+ - Fetch Employee First Name, Department name, heighst salary and lowest salary by departments.
 
- - Write an SQL query to clone a new table from another table.
+ - Fetch roles name if have multiple users.
 
- 
+ - 
