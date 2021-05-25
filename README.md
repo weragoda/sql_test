@@ -82,8 +82,8 @@ ___
 ```
     INSERT INTO temp.transaction_dates (
         process_tstamp,
-        collector_tstamp )
-    (
+        transaction_tstamp )
+        (
             WITH max_start_time AS(
                 select max(transaction_tstamp) as transaction_tstamp
                 from temp.transaction_start_dates
