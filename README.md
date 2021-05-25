@@ -74,4 +74,31 @@ ___
 
  - Fetch roles name if have multiple users.
 
- - 
+
+### Fix the below error in the following provided SQL query. Implement your changes in the best place.
+
+ - `Cannot insert a NULL value into column transaction_tstamp` 
+
+```
+    INSERT INTO temp.transaction_dates (
+        process_tstamp,
+        collector_tstamp )
+    (
+            WITH max_start_time AS(
+                select max(transaction_tstamp) as transaction_tstamp
+                from temp.transaction_start_dates
+            ),
+            max_complete_time AS (
+                select max(transaction_tstamp) as transaction_tstamp
+                from temp.transaction_end_dates
+            )
+            SELECT  getdate() as process_tstamp, max(transaction_tstamp) as transaction_tstamp
+            FROM (
+                    SELECT DISTINCT transaction_tstamp
+                    FROM max_start_time
+                    UNION ALL
+                    SELECT DISTINCT transaction_tstamp
+                    FROM max_complete_time
+                )
+        );
+```
