@@ -64,7 +64,7 @@ ___
 
  - Fetch user name, role and department of the employee who are under role trainer and officer.
 
- - Fetch duplicate records if any and delete dullicate records in employee role table.
+ - Fetch duplicate records if any and delete duplicate records in employee role table.
 
  - Update is_deleted:True and is_updateted:current_time for inactive and not verified user in HR department.
 
@@ -72,12 +72,16 @@ ___
 
  - Fetch Employee First Name, Department name, heighst salary and lowest salary by departments.
 
- - Fetch roles name if have multiple users.
+ - Fetch all roles name with multiple users.
 
 
-### Fix the below error in the following provided SQL query. Implement your changes in the same query or change query to fix error.
+### Fix the below error. Implement your changes in the same query or change query to fix error. You can refer 3 tables in below for ubderstand table sructure.
 
- - `Cannot insert a NULL value into column transaction_tstamp` 
+ - TABLE NAME : temp.transaction_dates `Columns` (process_tstamp : NOT NULL , transaction_tstamp : NOT NULL )
+ - TABLE NAME : temp.transaction_start_dates `Columns` ( transaction_tstamp )
+ - TABLE NAME : temp.transaction_end_dates `Columns` ( transaction_tstamp )
+
+ - `Cannot insert a NULL value into column transaction_tstamp`
 
 ```
     INSERT INTO temp.transaction_dates (
