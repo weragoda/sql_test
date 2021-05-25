@@ -12,9 +12,9 @@
 | 3	| john	 | john monash   | +65 66312339 | ********* | 3 | 3 | True | True | 	False | 5487 |2021-03-24 02:06:52.404160 | 2021-03-24 02:06:52.404160
 | 4	| robbin | robbin tan	| +65 76312456 | ********* | 4 | 3 | True | false |	False | 5596 |2021-04-24 02:06:52.404160 | 2021-04-26 02:06:52.404160
 | 5	| patric | patric lee	| +65 45312543 | ********* | 5 | 4 | True | True | 	False | 4569 |2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
-| 6	| Jon    | Jon snow		| +65 96312435 | ********* | 6 | 2 | False | False |	False | 4676 |2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
-| 7	| stephens | stephen hawking	| +65 87412743 | ********* | 7 | 1 | True | True | 	False | 5735 |2021-05-24 02:06:52.404160 | 2021-05-48 02:06:52.404160
-| 8	| mike   | mike pence		| +65 12326775 | ********* | 8 | 1 | True | True | 	False | 3934 |2021-05-24 02:06:52.404160 | 2021-05-27 02:06:52.404160
+| 6	| Jon    | john wick		| +65 96312435 | ********* | 6 | 2 | False | False |	False | 4676 |2021-04-24 02:06:52.404160 | 2021-04-24 02:06:52.404160
+| 7	| stephens | stephen mil	| +65 87412743 | ********* | 7 | 1 | True | True | 	False | 5735 |2021-05-24 02:06:52.404160 | 2021-05-48 02:06:52.404160
+| 8	| mike   | mike jackson		| +65 12326775 | ********* | 8 | 1 | True | True | 	False | 3934 |2021-05-24 02:06:52.404160 | 2021-05-27 02:06:52.404160
 | 9	| hillyer| hillyer forman	| +65 18367456 | ********* | 9 | 3 | False | True | 	False | 7743 |2021-05-24 02:06:52.404160 | 2021-05-29 02:06:52.404160
 |10	| robbin | robbin hood	| +65 99312343 | ********* | 10 | 4| True | True | 	False | null |2021-05-24 02:06:52.404160 | 2021-05-24 02:06:52.404160
 ___
@@ -75,7 +75,7 @@ ___
  - Fetch roles name if have multiple users.
 
 
-### Fix the below error in the following provided SQL query. Implement your changes in the best place.
+### Fix the below error in the following provided SQL query. Implement your changes in the same query or change query to fix error.
 
  - `Cannot insert a NULL value into column transaction_tstamp` 
 
