@@ -81,7 +81,7 @@ ___
  - TABLE NAME : temp.transaction_start_dates `Columns` ( transaction_tstamp )
  - TABLE NAME : temp.transaction_end_dates `Columns` ( transaction_tstamp )
 
- - `Cannot insert a NULL value into column transaction_tstamp`
+ - ERROR : `Cannot insert a NULL value into column transaction_tstamp`
 
 ```
     INSERT INTO temp.transaction_dates (
